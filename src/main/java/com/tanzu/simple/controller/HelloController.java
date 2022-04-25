@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class SimpleController {
+public class HelloController {
 
-  private static final Logger LOG = LoggerFactory.getLogger(SimpleController.class);
+  private static final Logger LOG = LoggerFactory.getLogger(HelloController.class);
 
-  @GetMapping("/")
+  @GetMapping("/hello")
   public String hello(@RequestHeader Map<String, String> headers) {
     headers.forEach((key, value) -> {
       LOG.info(String.format("Header '%s' = %s", key, value));
