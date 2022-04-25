@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: tanzu-simple
+
+info:
+  app:
+    # Reuse declared variable
+    name: ${spring.application.name}
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
