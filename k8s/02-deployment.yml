@@ -15,7 +15,7 @@ spec:
         app: tanzu-simple
     spec:
       containers:
-        - image: harbor.withtanzu.com/fmartin/tanzu-demo/tanzu-simple:0.0.1-SNAPSHOT
+        - image: harbor-fmartin-tanzu.francecentral.cloudapp.azure.com/fmartin/tanzu-simple/tanzu-simple:0.0.1-SNAPSHOT
           name: tanzu-simple
           resources:
             limits:
