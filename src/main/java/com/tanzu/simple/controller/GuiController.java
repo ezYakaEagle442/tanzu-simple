@@ -22,7 +22,7 @@ public class GuiController {
 
   @GetMapping("/")
   public String greeting(Model model) {
-    model.addAttribute("hello", helloes.get(counter.getAndIncrement() % helloes.size()));
+    model.addAttribute("hello - ", helloes.get(counter.getAndIncrement() % helloes.size()));
     model.addAttribute("color", "#669999");
     return "hello";
   }
