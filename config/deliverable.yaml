@@ -16,6 +16,6 @@ spec:
     value: config/dev/tanzu-app-deploy
   source:
     git:
-      url: ssh://git@github.com/beeNotice/tanzu-app-deploy.git
+      url: ssh://git@github.com/ezYakaEagle442/tanzu-app-deploy.git
       ref:
         branch: main
