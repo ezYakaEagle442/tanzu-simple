@@ -15,7 +15,7 @@ spec:
         app: tanzu-simple
     spec:
       containers:
-        - image: harbor-fmartin-tanzu.francecentral.cloudapp.azure.com/fmartin/tanzu-simple:latest
+        - image: ${ACR_URL}/${REPO}/tanzu-simple:${IMAGE_TAG}
           name: tanzu-simple
           resources:
             limits:
