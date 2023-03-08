@@ -3,11 +3,10 @@ package com.tanzu.simple.controller;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.tanzu.simple.domain.Hello;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-
-import com.tanzu.simple.domain.Hello;
 
 @Controller
 public class GuiController {
