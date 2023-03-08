@@ -38,6 +38,7 @@ public class TanzuSimpleApplication {
             .components(new Components())
             .info(new Info()
                     .title("Tanzu App - OpenAPI 3.0")
+                    .version("1.0.0")
                     .description("This is a sample Spring Boot RESTful service using springdoc-openapi and OpenAPI 3."));
   }
 

@@ -18,3 +18,7 @@ spec:
   env:
   - name: SPRING_PROFILES_ACTIVE
     value: "prod"
+  build:
+    env:
+      - name: BP_JVM_VERSION
+        value: "17.*"
