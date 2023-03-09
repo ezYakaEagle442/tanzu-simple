@@ -31,3 +31,7 @@ accelerator:
       defaultValue: "The Tanzu Simple API"
       dependsOn:
         name: exposeOpenAPIEndpoint
+
+engine:
+  type: Include
+  patterns: ['**']
