@@ -7,14 +7,29 @@ metadata:
     apps.tanzu.vmware.com/workload-type: web 
     apps.tanzu.vmware.com/has-tests: "true"
     app.kubernetes.io/part-of: tanzu-app
+    apis.apps.tanzu.vmware.com/register-api: "true"
   annotations:
     autoscaling.knative.dev/minScale: "1"
 spec:
   source:
     git:
-      url: ssh://git@github.com/beeNotice/tanzu-simple
+      url: ssh://git@github.com/ezYakaEagle442/tanzu-simple
       ref:
         branch: main
   env:
   - name: SPRING_PROFILES_ACTIVE
     value: "prod"
+  build:
+    env:
+      - name: BP_JVM_VERSION
+        value: "17.*"
+  params:
+    - name: api_descriptor
+      value:
+        type: openapi
+        location:
+          path: "/v3/api-docs"
+        system: default/tanzu-app-system
+        owner: default/default-team
+        description: "The Tanzu Simple API"
+
