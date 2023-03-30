@@ -13,7 +13,7 @@ metadata:
 spec:
   source:
     git:
-      url: ssh://git@github.com/beeNotice/tanzu-simple
+      url: ssh://git@github.com/ezYakaEagle442/tanzu-simple
       ref:
         branch: main
   env:
